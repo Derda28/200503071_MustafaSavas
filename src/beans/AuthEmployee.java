@@ -1,6 +1,6 @@
 package beans;
 
-public class authEmployee extends person{
+public class AuthEmployee extends Person {
     private int branchCode;
     private String username;
     private String password;

@@ -1,12 +1,18 @@
 package beans;
 
-public class abonnement {
+public class Abonnement {
+    private int id;
     private String artOfAbo;
-    private int countOfMenues;
+    private int countOfMenus;
+    private int menuId;
     private double totalPrice;
     private boolean hasPaid;
     private String startDate;
     private String endDate;
+
+    public int getId() {
+        return id;
+    }
 
     public String getArtOfAbo() {
         return artOfAbo;
@@ -16,12 +22,16 @@ public class abonnement {
         this.artOfAbo = artOfAbo;
     }
 
-    public int getCountOfMenues() {
-        return countOfMenues;
+    public int getCountOfMenus() {
+        return countOfMenus;
     }
 
-    public void setCountOfMenues(int countOfMenues) {
-        this.countOfMenues = countOfMenues;
+    public void setCountOfMenus(int countOfMenus) {
+        this.countOfMenus = countOfMenus;
+    }
+
+    public int getMenuId(){
+        return menuId;
     }
 
     public double getTotalPrice() {

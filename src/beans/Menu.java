@@ -1,9 +1,14 @@
 package beans;
 
-public class menu {
+public class Menu {
+    private int id;
     private String content;
     private String artOfMenu;
     private double price;
+
+    public int getId() {
+        return id;
+    }
 
     public String getContent() {
         return content;

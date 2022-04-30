@@ -1,9 +1,8 @@
 package beans;
-
-public class adminEmployee extends person{
+public class AdminEmployee extends Person {
     private int id;
 
-    public adminEmployee(){
+    public AdminEmployee(){
 
     }
 
