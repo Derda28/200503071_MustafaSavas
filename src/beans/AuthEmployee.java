@@ -2,9 +2,18 @@ package beans;
 
 public class AuthEmployee extends Person {
     private int branchCode;
+    private int id;
     private String username;
     private String password;
 
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public int getBranchCode() {
         return branchCode;

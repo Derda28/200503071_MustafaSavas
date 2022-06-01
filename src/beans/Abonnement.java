@@ -4,14 +4,19 @@ public class Abonnement {
     private int id;
     private String artOfAbo;
     private int countOfMenus;
-    private int menuId;
+    private String artOfMenu;
     private double totalPrice;
     private boolean hasPaid;
+    private int customerId;
     private String startDate;
-    private String endDate;
+    private String duration;
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getArtOfAbo() {
@@ -30,8 +35,12 @@ public class Abonnement {
         this.countOfMenus = countOfMenus;
     }
 
-    public int getMenuId(){
-        return menuId;
+    public String getArtOfMenu(){
+        return artOfMenu;
+    }
+
+    public void setArtOfMenu(String artOfMenu) {
+        this.artOfMenu = artOfMenu;
     }
 
     public double getTotalPrice() {
@@ -50,6 +59,14 @@ public class Abonnement {
         this.hasPaid = hasPaid;
     }
 
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
+
     public String getStartDate() {
         return startDate;
     }
@@ -58,11 +75,11 @@ public class Abonnement {
         this.startDate = startDate;
     }
 
-    public String getEndDate() {
-        return endDate;
+    public String getDuration() {
+        return duration;
     }
 
-    public void setEndDate(String endDate) {
-        this.endDate = endDate;
+    public void setDuration(String duration) {
+        this.duration = duration;
     }
 }
