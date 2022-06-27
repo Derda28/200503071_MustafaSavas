@@ -42,7 +42,8 @@ public class UpdateAboPage {
 
         String customerName="", customerSurname="";
         dbHelper.open();
-        ResultSet rs = dbHelper.query("SELECT Name, Surname FROM customer where id="+abo.getCustomerId());
+
+        ResultSet rs = dbHelper.getInformation(abo.getCustomerId());
         try{
             while(rs.next()){
                 customerName = rs.getString("Name");

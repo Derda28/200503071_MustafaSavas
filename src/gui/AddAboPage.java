@@ -40,7 +40,7 @@ public class AddAboPage {
         this.customerId = customerId;
         String customerName="", customerSurname="";
         dbHelper.open();
-        ResultSet rs = dbHelper.query("SELECT Name, Surname FROM customer where id="+customerId);
+        ResultSet rs = dbHelper.getInformation(customerId);
         try{
             while(rs.next()){
                 customerName = rs.getString("Name");

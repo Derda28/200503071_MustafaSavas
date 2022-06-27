@@ -454,6 +454,11 @@ public class DbHelper {
         }
     }
 
+    public ResultSet getInformation(int customerId){
+        ResultSet rs = query("SELECT Name, Surname FROM customer where id="+customerId);
+        return rs;
+    }
+
     public ResultSet query(String s) {
         try{
             ResultSet rs = stmt.executeQuery(s);

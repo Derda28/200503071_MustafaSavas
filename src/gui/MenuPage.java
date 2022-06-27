@@ -21,6 +21,8 @@ public class MenuPage {
     private JButton menuBackBtn;
     private JPanel MainPanel;
 
+
+
     MenuPage(int user) {
         this.user = user;
 
